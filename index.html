@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <table border="1" cellspacing="1" cellpadding="1"  align="center">
+        <thead>
+            <tr>
+                <th bgcolor="#ccccff">
+                    Name
+                </th>
+                <th bgcolor="#ccccff">
+                    Value
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <label for="form_input_name">Name</label>
+                </td>
+                <td>
+                    <input type="text" name="user_name" id="form_input_name" placeholder="" width="200" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Sex
+                </td>
+                <td>
+                    <label>
+                        <input type="radio" name="user_sex" ivalue="man" checked> Male
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" name="user_sex" value="woman"> Female
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="eye_color">Eye color</label>
+                </td>
+                <td>
+                    <select name="eye_color" id="eye_color">
+                        <option selected>green</option>
+                        <option value="1">brown</option>
+                        <option value="2">blue</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Check all that apply</td>
+                <td>
+                    <label>
+                        <input type="checkbox" name="height_small" required> Over 6 feet tall
+                    </label>
+                    <br>
+                    <label>
+                        <input type="checkbox" name="height_big" required> Over 200 pounds
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <label for="">
+                        Describe your athletic ability:
+                        <br>
+                        <textarea name="athletic_ability" id="" cols="40" rows="5"></textarea>
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <button type="submit">Enter my information</button>
+                </td>
+            </tr>
+        </tbody>     
+    </table>
+</body>
+</html>
